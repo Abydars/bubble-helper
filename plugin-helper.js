@@ -1,4 +1,4 @@
-const BubbleHelper {
+const BubbleHelper = {
   applyStyles: function($element, bubble) {
         if (!$element || !$element.jquery) {
             console.error("Invalid jQuery element provided.");
