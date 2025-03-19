@@ -1,5 +1,5 @@
 const BubbleHelper = {
-  replacePlaceholders = function(str, properties) {
+  replacePlaceholders: function(str, properties) {
     return str.replaceAll(/%([\w_]+)%/g, (match, key) => {
       // If the key exists in properties, replace it; otherwise, keep the original placeholder.
       return key in properties ? properties[key] : match;
