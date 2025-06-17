@@ -5,7 +5,7 @@ const LesscodeTemplateHelper = {
     document.addEventListener('DOMContentLoaded', function() {
       if(window.location.href.indexOf(domain) > 0) {
         var topBar = $('<div/>');
-        var btnStyles = 'padding: 10px;background: #0a7cac;border-radius: 5px;color: white;display: inline-block;';
+        var btnStyles = 'padding: 10px 20px;background: none;border-radius: 30px;color: #0a7cac;font-size: 14px;display: inline-block;font-weight: 600;border: 1px solid #0a7cac;';
 
         var closeBtn = $(`<a href="#">Close</a>`);
         closeBtn.attr('style', btnStyles);
