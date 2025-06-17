@@ -11,7 +11,7 @@ const LesscodeTemplateHelper = {
         closeBtn.attr('style', btnStyles);
         closeBtn.on('click', function(e) {
           e.preventDefault();
-          topBar.fadeOut();
+          topBar.slideUp();
         });
         
         var buyHref = $(`<a target="_blank" href="https://bubble.io/template/${marketplaceUrl}">Buy this template</a>`);
