@@ -29,7 +29,9 @@ const LesscodeTemplateHelper = {
         
         $('body').append(topBar);
 
-        topBar.slideDown();
+        setTimeout(function() {
+          topBar.slideDown();
+        }, 3000);
       }
     });
   }
