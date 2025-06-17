@@ -1,6 +1,9 @@
 const LesscodeTemplateHelper = {
   topBar: function(domain, marketplaceUrl) {
+    var $ = jQuery;
+    
     document.addEventListener('DOMContentLoaded', function() {
+      $('body').append('<a href>asdasd</a>');
           if(window.location.href.indexOf(domain) > 0) {
               var acon = document.createElement('div');
               var ahref = document.createElement('a');
