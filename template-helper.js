@@ -1,6 +1,5 @@
 const LesscodeTemplateHelper = {
   topBar: function(domain) {
-    document.addEventListener('DOMContentLoaded', function() {
           if(window.location.href.indexOf('domain') > 0) {
               var acon = document.createElement('div');
               var ahref = document.createElement('a');
@@ -12,6 +11,5 @@ const LesscodeTemplateHelper = {
               acon.appendChild(ahref);
               document.body.appendChild(acon);
           }
-      });
   }
 };
