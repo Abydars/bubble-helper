@@ -58,16 +58,11 @@ const LesscodeTemplateHelper = {
     }, 3000);
   },
   submitVisit: function() {
-    this.getUserIp((data) => {
-      console.log(data);
-    });
-  },
-  getUserIp: function(callback) {
-    fetch('https://ipapi.co/json/')
-    .then(response => response.json())
-    .then(callback)
-    .catch(error => {
-      console.error("Error fetching IP info:", error);
+    fetch('https://data.hztech.biz/bubble/api/create_visit', {
+      method: 'POST',
+      body: JSON.stringify({
+        'type': 'template'
+      })
     });
   }
 };
