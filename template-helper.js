@@ -15,6 +15,7 @@ const LesscodeTemplateHelper = {
         this.currentDemo = v;
       }
     });
+    this.topBar();
   },
   topBar: function() {
     var $ = jQuery;
