@@ -17,6 +17,8 @@ const LesscodeTemplateHelper = {
     });
 
     if(this.currentDemo) {
+      this.submitVisit();
+      
       document.addEventListener('DOMContentLoaded', () => {
         this.topBar();
       });
@@ -54,6 +56,19 @@ const LesscodeTemplateHelper = {
     setTimeout(function() {
       topBar.slideDown();
     }, 3000);
+  },
+  submitVisit: function() {
+    this.getUserIp((data) => {
+      console.log(data);
+    });
+  },
+  getUserIp: function(callback) {
+    fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(callback)
+    .catch(error => {
+      console.error("Error fetching IP info:", error);
+    });
   }
 };
 
