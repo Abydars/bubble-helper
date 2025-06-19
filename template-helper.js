@@ -8,7 +8,7 @@ const LesscodeTemplateHelper = {
     }
   },
   currentDemo: null,
-  init(): function() {
+  init: function() {
     var href = window.location.href;
     Object.entries(this.demos).map(([k,v]) => {
       if(href.indexOf(k) > 0) {
