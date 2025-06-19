@@ -1,9 +1,27 @@
 const LesscodeTemplateHelper = {
-  topBar: function(domain, marketplaceUrl) {
+  demos: {
+    "lctrainedagent": {
+      "marketplace": ""
+    },
+    "email-marketing-template": {
+      "marketplace": ""
+    }
+  },
+  currentDemo: null,
+  init(): function() {
+    var href = window.location.href;
+    Object.entries(this.demos).map(([k,v]) => {
+      if(href.indexOf(k) > 0) {
+        this.currentDemo = v;
+      }
+    });
+  },
+  topBar: function() {
     var $ = jQuery;
     
-    document.addEventListener('DOMContentLoaded', function() {
-      if(window.location.href.indexOf(domain) > 0) {
+    document.addEventListener('DOMContentLoaded', () => {
+      if(this.currentDemo) {
+        const marketplaceUrl = this.currentDemo.marketplace;
         var topBar = $('<div/>');
         var btnStyles = 'padding: 10px 20px;background: none;border-radius: 30px;color: #0a7cac;font-size: 14px;display: inline-block;font-weight: 600;border: 1px solid #0a7cac;text-decoration: none !important;';
 
@@ -36,3 +54,5 @@ const LesscodeTemplateHelper = {
     });
   }
 };
+
+LesscodeTemplateHelper.init();
