@@ -8,10 +8,12 @@ const LesscodeTemplateHelper = {
     }
   },
   currentDemo: null,
+  currentDemoKey: null,
   init: function() {
     var href = window.location.href;
     Object.entries(this.demos).map(([k,v]) => {
       if(href.indexOf(k) > 0) {
+        this.currentDemoKey = k;
         this.currentDemo = v;
       }
     });
@@ -61,7 +63,7 @@ const LesscodeTemplateHelper = {
     fetch('https://data.hztech.biz/bubble/api/create_visit', {
       method: 'POST',
       body: JSON.stringify({
-        'type': 'template'
+        'type': this.currentDemoKey
       })
     });
   }
