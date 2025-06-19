@@ -5,19 +5,19 @@ const LesscodeTemplateHelper = {
       "marketplace": ""
     },
     "simple-chat-template": {
-      "marketplace": ""
+      "marketplace": "https://bubble.io/template/chatgpt-assistants-1741032755257x977731786733518800"
     },
     "lesscode-lp-real-estate": {
-      "marketplace": ""
+      "marketplace": "https://bubble.io/template/real-estate-expert---lp-1741979940239x275241382038732800"
     },
     "brellions": {
-      "marketplace": ""
+      "marketplace": "https://bubble.io/template/lucky-draw-multiple-signs-1748868878278x471030439192035300"
     },
     "abid-39518": {
       "marketplace": ""
     },
     "email-marketing-template": {
-      "marketplace": ""
+      "marketplace": "https://bubble.io/template/email-marketing-template-1749691927375x521395502640529400"
     }
   },
   currentDemo: null,
