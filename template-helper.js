@@ -1,4 +1,5 @@
 const LesscodeTemplateHelper = {
+  api: "https://marketplace-api.lesscode.io/api",
   demos: {
     "lctrainedagent": {
       "marketplace": ""
@@ -60,7 +61,7 @@ const LesscodeTemplateHelper = {
     }, 3000);
   },
   submitVisit: function() {
-    fetch('https://data.hztech.biz/bubble/api/create_visit', {
+    fetch(`${this.api}/create_visit`, {
       method: 'POST',
       body: JSON.stringify({
         'type': this.currentDemoKey
