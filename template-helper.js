@@ -4,6 +4,18 @@ const LesscodeTemplateHelper = {
     "lctrainedagent": {
       "marketplace": ""
     },
+    "simple-chat-template": {
+      "marketplace": ""
+    },
+    "lesscode-lp-real-estate": {
+      "marketplace": ""
+    },
+    "brellions": {
+      "marketplace": ""
+    },
+    "abid-39518": {
+      "marketplace": ""
+    },
     "email-marketing-template": {
       "marketplace": ""
     }
