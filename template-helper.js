@@ -1,8 +1,11 @@
 const LesscodeTemplateHelper = {
   api: "https://marketplace-api.lesscode.io/api",
   demos: {
+    "ai-agent-healthcare": {
+      "marketplace": "ai-agent---healthcare-1750392833583x432150744419794940"
+    },
     "lctrainedagent": {
-      "marketplace": ""
+      "marketplace": "ai-agent---job-proposal-writer-1750132027129x247139300384440320"
     },
     "simple-chat-template": {
       "marketplace": "chatgpt-assistants-1741032755257x977731786733518800"
