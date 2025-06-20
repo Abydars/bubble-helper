@@ -22,7 +22,7 @@ const LesscodeTemplateHelper = {
   },
   currentDemo: null,
   currentDemoKey: null,
-  barTimeout: (2 * 60 * 1000),
+  barTimeout: (0.5 * 60 * 1000),
   init: function() {
     var href = window.location.href;
     Object.entries(this.demos).map(([k,v]) => {
