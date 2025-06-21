@@ -1,4 +1,4 @@
-if(typeof BubbleHelper == 'undefined') {
+try {
   const BubbleHelper = {
     replacePlaceholders: function(str, properties) {
       return str.replaceAll(/%([\w_]+)%/g, (match, key) => {
@@ -157,4 +157,4 @@ if(typeof BubbleHelper == 'undefined') {
       }
     }
   };
-}
+} catch(e) {}
