@@ -277,7 +277,7 @@ var LesscodeTemplateHelper = {
         submitBtn.html('<span style="margin-right: 8px;">✨</span>Send Feedback');
         alert('There was an error submitting your feedback. Please try again.');
       });
-    }.bind(this));
+    });
     
     // Add to page
     $('body').append(overlay);
