@@ -40,7 +40,7 @@ var LesscodeTemplateHelper = {
       this.submitVisit();
       
       // document.addEventListener('DOMContentLoaded', () => {
-        this.topBar();
+        this.showTopBar();
         this.showFeedbackPopup();
       // });
     }
@@ -102,6 +102,11 @@ var LesscodeTemplateHelper = {
         'type': this.currentDemoKey
       })
     });
+  },
+  showTopBar: function() {
+    setTimeout(() => {
+      this.topBar();
+    }, this.elementsTimeout);
   },
   showFeedbackPopup: function() {
     setTimeout(() => {
