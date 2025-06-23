@@ -26,7 +26,7 @@ var LesscodeTemplateHelper = {
   },
   currentDemo: null,
   currentDemoKey: null,
-  elementsTimeout: 0,//(0.1 * 60 * 1000),
+  elementsTimeout: (0.1 * 60 * 1000),
   init: function() {
     var href = window.location.href;
     Object.entries(this.demos).map(([k,v]) => {
