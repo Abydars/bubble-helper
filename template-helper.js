@@ -249,7 +249,7 @@ var LesscodeTemplateHelper = {
       };
       
       // Submit to feedback endpoint
-      fetch('https://marketplace-api.lesscode.io/feedback', {
+      fetch('https://marketplace-api.lesscode.io/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
