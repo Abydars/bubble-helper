@@ -114,8 +114,11 @@ var LesscodeTemplateHelper = {
   createFeedbackPopup: function() {
     var $ = jQuery;
     
+    if($('#lesscode-feedback-popup').length > 0) 
+      $('#lesscode-feedback-popup').remove();
+
     // Create modern feedback popup overlay with backdrop blur
-    var overlay = $('<div/>');
+    var overlay = $('<div id="lesscode-feedback-popup"/>');
     overlay.attr('style', 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px); z-index: 9999; display: flex; justify-content: center; align-items: center; animation: fadeIn 0.3s ease;');
     
     // Create modern feedback form container
@@ -235,7 +238,7 @@ var LesscodeTemplateHelper = {
       }
     });
     
-    form.on('submit', function(e) {
+    submitBtn.on('click', function(e) {
       e.preventDefault();
       
       // Add loading state
