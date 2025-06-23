@@ -82,7 +82,7 @@ var LesscodeTemplateHelper = {
     topBar.append(closeBtn);
     topBar.hide();
     
-    $('body').append(topBar);
+    $('body').prepend(topBar);
 
     topBar.find('a').on('mouseenter', function() {
       $(this).attr('style', btnStyles + 'transform: translateY(-2px);box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);');
@@ -91,9 +91,7 @@ var LesscodeTemplateHelper = {
       $(this).attr('style', btnStyles);
     });
 
-    setTimeout(function() {
-      topBar.slideDown();
-    }, this.elementsTimeout);
+    topBar.slideDown();
   },
   submitVisit: function() {
     fetch(`${this.api}/create_visit`, {
