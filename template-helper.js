@@ -245,7 +245,8 @@ var LesscodeTemplateHelper = {
       var formData = {
         email: emailInput.val(),
         feedback: feedbackTextarea.val(),
-        template: this.currentDemoKey || 'unknown'
+        visit_url: window.location.href,
+        type: this.currentDemoKey
       };
       
       // Submit to feedback endpoint
